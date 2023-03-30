@@ -8,7 +8,7 @@ frontend:
   prod:
     dockerfile: Dockerfile
   resources:
-  - name: db1
+  - name: silly-demo
     engine: postgres
     version: 13
     type: database
