@@ -1,0 +1,14 @@
+frontend:
+  type: frontend
+  url_path: /
+  repo_path: .
+  dev:
+    command: ["silly-demo"]
+    dockerfile: Dockerfile.dev
+  prod:
+    dockerfile: Dockerfile
+  resources:
+  - name: db1
+    engine: postgres
+    version: 13
+    type: database

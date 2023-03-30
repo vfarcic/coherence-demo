@@ -1,0 +1,5 @@
+FROM golang:1.20-alpine
+ADD . /src
+WORKDIR /src
+RUN go get -d -v -t
+RUN GOOS=linux GOARCH=amd64 go build -v -o silly-demo
